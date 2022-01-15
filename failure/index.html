@@ -1,0 +1,76 @@
+<html>
+<!-- Created by MrTron. If you see this POG? -->
+<!--	
+╭━━━━╮╱╱╱╱╱╱╭━╮╭━┳━━━╮
+┃╭╮╭╮┃╱╱╱╱╱╱┃┃╰╯┃┃╭━╮┃
+╰╯┃┃┣┻┳━━┳━╮┃╭╮╭╮┃┃╱╰╯
+╱╱┃┃┃╭┫╭╮┃╭╮┫┃┃┃┃┃┃╱╭╮
+╱╱┃┃┃┃┃╰╯┃┃┃┃┃┃┃┃┃╰━╯┃
+╱╱╰╯╰╯╰━━┻╯╰┻╯╰╯╰┻━━━╯
+-->
+<head>
+	<title>Error! | TronMC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+	<meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/moqmar/weather.css/master/weather.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+	<meta http-equiv="refresh" content="2; url = https://www.tronmc.com" />
+</head>
+<body class="weather clear">
+<center>
+	<div class="container">
+		<div class="logo">
+			<br>
+			<img id="tronmclogo" src="https://tronmc.com/img/christmaslogo.png">
+	</div>
+	<div class="success">
+	<h1>Error!</h1>
+	<h1 style="font-size: 50px;">Redirecting...</h1>
+	</div>
+	</center>
+	<footer>
+	<center>
+		<p id="copyrightboi" class="copyright">&copy; 2021 Tron, Inc. All Rights Reserved.</p>
+	</center>
+	</footer>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+	<script src="js/snow.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	
+	
+<script>
+//Taken from TronMC's Maintenance Countdown
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 22, 2021 13:00:00").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="counter"
+  document.getElementById("counter").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("counter").innerHTML = "Giveaway has begun!";
+  }
+}, 1000);
+</script>
+</body>
+</html>

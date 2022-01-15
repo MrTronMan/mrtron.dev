@@ -1,0 +1,129 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	/*Hey whatcha doin here?*/
+	/*- .-. --- -. -- -.-. .-.-.- -.-. --- -- -..-. -.- --- .-. -... ... .-.-.- .... - -- .-..*/
+	/*Hmm??? I wonder what that is?*/
+	background: linear-gradient(rgba(20, 26, 35,0.55),rgba(20, 26, 35, 0.55)),
+				url("https://tronmc.com/img/festivelobby.png") no-repeat center center fixed;
+	background-size: cover;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	position: relative;
+}
+
+html, body {
+	width: 100vw;
+	height: 100vh;
+	
+	display: -ms-flexbox;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        
+	
+}
+.giveaway-grid {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+}		
+.giveaway-item {
+    background: #ffffff40;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+h1, h2 {
+    color: white;
+}
+p {
+    color: white;
+    font-size: 18px;
+}
+a { 
+    color: inherit;
+}
+.success {
+    font-size: 100px;
+} 
+footer {
+    background: #222;
+    color: white;
+    padding: 20px 20px;
+    position:fixed;bottom:0;left:0;right:0;height:10px;
+}
+.copyright {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    position: relative;	
+    top: -31px;
+}
+.logo img {
+    -webkit-animation-name: logo;
+    animation-name: logo;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes logo {
+	0% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.07);
+		        transform: scale(1.07);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+@keyframes logo {
+	0% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.07);
+		        transform: scale(1.07);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+@media screen and (max-width: 600px) {
+    .logo img {
+       width: 350px;
+	}
+    .success {
+       font-size: 40px;
+       }
+    .copyright {
+       top: -29px;
+       font-size: 18px;
+       }
+    .giveaway-grid {
+       grid-template-columns: 300px;
+}
+    footer {
+       max-width: 435px;
+       position:fixed;bottom:0;left:0;right:0;height:10px;
+}
+    html, body {
+       overflow-x:hidden;
+       height: auto;
+}
