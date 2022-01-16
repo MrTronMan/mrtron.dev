@@ -271,7 +271,7 @@ html {
   }
 }
 /*iPhone Sizes*/
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 200px) {
   .welcome {
     font-size: 40px;
     margin-top: -460px;
@@ -294,7 +294,7 @@ body {
 }
 }
 /*iPad Sizes (for Derock lmao)*/
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 600px) {
   .welcome {
     font-size: 80px;
     margin-top: -550px;
