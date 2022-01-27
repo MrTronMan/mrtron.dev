@@ -1,9 +1,7 @@
-function refresh(node)
-{
+function refresh(node) {
    var times = 1000; // gap in Milli Seconds;
 
-   (function startRefresh()
-   {
+   (function startRefresh() {
       var address;
       if(node.src.indexOf('?')>-1)
        address = node.src.split('?')[0];
@@ -14,11 +12,9 @@ function refresh(node)
       setTimeout(startRefresh,times);
    })();
 
-}
-
-window.onload = function()
-{
+};
+window.onload = function() {
   var node = document.getElementById('presenceimg');
   refresh(node);
   // you can refresh as many images you want just repeat above steps
-}
+};
