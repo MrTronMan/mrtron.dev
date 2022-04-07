@@ -6,7 +6,8 @@
 */
 
 body {
-  background-color: #131416;
+  
+  background: #1d1f22;
   color: white;
   font-family: 'Hind Siliguri', sans-serif;
 }
@@ -14,6 +15,7 @@ html, body {
   height: auto;
   width: auto;
   overflow-x: hidden;
+  margin: 0;
 
 	display: -ms-flexbox;
 	-webkit-box-pack: center;
@@ -29,6 +31,7 @@ html {
 .container {
   display: block;
   text-align: -webkit-center;
+  min-height: 65vh;
 }
 .welcome {
     width:800px;
@@ -39,6 +42,14 @@ html {
     font-weight: bold;
     font-size: 100px;
     color: #ccc; text-align:center; vertical-align:middle
+}
+.divider {
+  background: linear-gradient(180deg, transparent, #1d1f22 38%);
+  height: 175px;
+}
+.contact-text {
+  font-size: 100px;
+  text-align: center;
 }
 .description {
   margin-top: 400px;
@@ -248,10 +259,11 @@ html {
   bottom:0;
   left:-50%;
   opacity:.5;
-  position:fixed;
+  position:absolute;
   right:-50%;
   top:0;
   z-index:-1;
+  height: 80em
 }
 
 .bg2 {
