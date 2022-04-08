@@ -14,7 +14,6 @@ body {
 html, body {
   height: auto;
   width: auto;
-  overflow-x: hidden;
   margin: 0;
 
 	display: -ms-flexbox;
@@ -47,8 +46,19 @@ html {
   background: linear-gradient(180deg, transparent, #1d1f22 38%);
   height: 275px;
 }
-.contact-text {
+.about-header {
   font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
+}
+.about-header.OnScroll span {
+  opacity: 0;
+	transform: translate(-300px, 0) scale(0);
+	animation: sideSlide .6s forwards;
+}
+.about-text {
+  font-size: 40px;
   text-align: center;
 }
 .description {
@@ -79,6 +89,29 @@ html {
 .shortcuts img {
   width: 55px;
   padding: 10px;
+}
+/*iPhone Sizes*/
+@media screen and (max-width: 600px) {
+  .welcome {
+    font-size: 40px;
+    margin-top: -460px;
+    margin-left: -404px;
+  }
+  .description {
+  padding: 0px 10px 0px 0px;
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 163px;
+  }
+  .presence img {
+    width: 100%;
+  }
+  html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
 }
 /*Scrollbar Stuffs*/
 ::-webkit-scrollbar {
@@ -252,6 +285,40 @@ html {
 .title span:nth-of-type(20) {
 	animation-delay: .95s;
 }
+/*Second Section Title Animations*/
+.about-header span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.about-header span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.about-header span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.about-header span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.about-header span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+.about-header span:nth-of-type(7) {
+	animation-delay: .3s;
+}
+.about-header span:nth-of-type(8) {
+	animation-delay: .35s;
+}
+.about-header span:nth-of-type(9) {
+	animation-delay: .4s;
+}
+.about-header span:nth-of-type(10) {
+	animation-delay: .45s;
+}
+.about-header span:nth-of-type(11) {
+	animation-delay: .5s;
+}
+.about-header span:nth-of-type(12) {
+	animation-delay: .55s;
+}
 /*Background Animations*/
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
@@ -281,27 +348,4 @@ html {
   100% {
     transform:translateX(25%);
   }
-}
-/*iPhone Sizes*/
-@media screen and (max-width: 600px) {
-  .welcome {
-    font-size: 40px;
-    margin-top: -460px;
-    margin-left: -404px;
-  }
-  .description {
-  padding: 0px 10px 0px 0px;
-  font-size: 35px;
-  font-weight: 500;
-  margin-top: 163px;
-  }
-  .presence img {
-    width: 100%;
-  }
-  html, body {
-  overflow-x: hidden;
-}
-body {
-  position: relative;
-}
 }
