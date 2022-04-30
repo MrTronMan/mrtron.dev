@@ -42,20 +42,81 @@ html {
     font-size: 100px;
     color: #ccc; text-align:center; vertical-align:middle
 }
+.fadeIn {
+  animation: fadeIn 3s;
+  font-size: 100px;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-emphasis-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.color-change
+{
+  font-size: 100px;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-emphasis-color: transparent;
+  animation: textclip 2s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+  
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+  
+}
 .divider {
   background: linear-gradient(180deg, transparent, #1d1f22 38%);
   height: 275px;
 }
-.about-header {
+.about-animation span {
   font-size: 100px;
   text-align: center;
   font-weight: bold;
   opacity: 0;
+  animation: sideSlide .6s forwards;
 }
-.about-header.OnScroll span {
-  opacity: 0;
-	transform: translate(-300px, 0) scale(0);
-	animation: sideSlide .6s forwards;
+
+.about-header {
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
 }
 .about-text {
   font-size: 40px;
@@ -71,14 +132,6 @@ html {
   display: inline-block;
   opacity: 0;
   filter: blur(4px);
-}
-.title span {
-	color: white;
-	opacity: 0;
-	transform: translate(-300px, 0) scale(0);
-	animation: sideSlide .6s forwards;
-  font-weight: bold;
-  text-align: center;
 }
 .presence img {
   width:40%;
@@ -227,6 +280,7 @@ body {
 		color: white;
 	}
 }
+
 /*Title Animations*/
 .title span:nth-of-type(2) {
 	animation-delay: .05s;
