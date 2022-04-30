@@ -147,16 +147,16 @@ html {
 @media screen and (max-width: 600px) {
   .color-change {
     font-size: 53px;
-    margin-top: -880px;
+    margin-top: -676px;
     margin-left: 40px;
   }
   .fadeIn {
     font-size: 53px;
-    margin-top: -880px;
+    margin-top: -676px;
     margin-left: 40px;
   }
   .divider {
-    height: 491px;
+    height: 520px;
   }
   .shortcuts {
     width: 60%
@@ -168,10 +168,10 @@ html {
   margin-top: 218px;
   }
   .about-animation span {
-    font-size: 75px;
+    font-size: 50px;
   }
   .about-text {
-    font-size: 35px;
+    font-size: 32px;
   }
   .presence img {
     width: 100%;
