@@ -39,12 +39,12 @@ html {
     top: 50%; margin-top:-400px;
     left: 50%; margin-left:-420px;
     font-weight: bold;
-    font-size: 100px;
+    font-size: 92px;
     color: #ccc; text-align:center; vertical-align:middle
 }
 .fadeIn {
   animation: fadeIn 3s;
-  font-size: 100px;
+  font-size: 92px;
   background: linear-gradient(
         90deg,
         rgba(255, 0, 0, 1) 0%,
@@ -71,7 +71,7 @@ html {
 }
 .color-change
 {
-  font-size: 100px;
+  font-size: 92px;
   background: linear-gradient(
         90deg,
         rgba(255, 0, 0, 1) 0%,
@@ -165,12 +165,12 @@ html {
 /*iPhone Sizes*/
 @media screen and (max-width: 600px) {
   .color-change {
-    font-size: 53px;
+    font-size: 44px;
     margin-top: -676px;
     margin-left: 40px;
   }
   .fadeIn {
-    font-size: 53px;
+    font-size: 44px;
     margin-top: -676px;
     margin-left: 40px;
   }
