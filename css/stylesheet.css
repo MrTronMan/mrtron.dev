@@ -175,8 +175,8 @@ html {
     margin-left: 40px;
   }
   .ping {
-    height: 30px;
-    width: 30px;
+    height: 30px !important;
+    width: 30px !important;
   }
   .ping-text {
     font-size: 30px;
