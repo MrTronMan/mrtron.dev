@@ -145,16 +145,33 @@ html {
 }
 /*iPhone Sizes*/
 @media screen and (max-width: 600px) {
-  .welcome {
-    font-size: 40px;
-    margin-top: -460px;
-    margin-left: -404px;
+  .color-change {
+    font-size: 53px;
+    margin-top: -880px;
+    margin-left: 40px;
+  }
+  .fadeIn {
+    font-size: 53px;
+    margin-top: -880px;
+    margin-left: 40px;
+  }
+  .divider {
+    height: 491px;
+  }
+  .shortcuts {
+    width: 60%
   }
   .description {
   padding: 0px 10px 0px 0px;
-  font-size: 35px;
+  font-size: 31px;
   font-weight: 500;
-  margin-top: 163px;
+  margin-top: 218px;
+  }
+  .about-animation span {
+    font-size: 75px;
+  }
+  .about-text {
+    font-size: 35px;
   }
   .presence img {
     width: 100%;
