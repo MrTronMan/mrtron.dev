@@ -178,6 +178,10 @@ html {
     height: 30px !important;
     width: 30px !important;
   }
+  .ping-mobile {
+    height: 30px !important;
+    width: 30px !important;
+  }
   .ping-text {
     font-size: 30px;
   }
@@ -478,6 +482,19 @@ body {
   width: 50px;
   transform: scale(1);
   animation: pulse-black 2s infinite;
+}
+.ping-mobile {
+  background-image: url("../img/discord-mobile.svg"); 
+  box-shadow: 0 0 0 10px rgba(51, 217, 178, 0.7);
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  transform: scale(1);
+  border-top-right-radius: 58px 80px;
+  border-top-left-radius: 58px 80px;
+  border-bottom-right-radius: 58px 80px;
+  border-bottom-left-radius: 58px 80px;
+  animation: pulse-green 2s infinite;
 }
 .ping-container {
   display: flex;
