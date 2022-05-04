@@ -162,6 +162,21 @@ html {
   width: 55px;
   padding: 10px;
 }
+.copyright {
+  font-weight: 600;
+  color: white;
+  font-size: 30px;
+  position: relative;	
+  top: -45px;
+  text-align: center;
+white-space: nowrap;
+}
+footer {
+  background: #161616;
+  color: white;
+  padding: 23px 20px;
+  position:relative;bottom:0;left:0;right:0;height:10px;
+}
 /*iPhone Sizes*/
 @media screen and (max-width: 600px) {
   .color-change {
@@ -211,6 +226,15 @@ html {
 }
 body {
   position: relative;
+}
+footer {
+  max-width: 435px;
+  position:relative;bottom:0;left:0;right:0;height:10px;
+}
+.copyright {
+  top: -31px;
+  font-size: 21px;
+  top: -10px;
 }
 }
 /*Scrollbar Stuffs*/
