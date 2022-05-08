@@ -71,6 +71,7 @@ function gS() {
 		}
     if(!data.listening_to_spotify) {
       document.getElementById('spotify').innerHTML = "i am not currently listenin' to anything!";
+      document.getElementById('spotify-track').href = "#";
     }
     else {
       var spotifyData = `${data.spotify.song}` + " - " + `${data.spotify.artist}`
