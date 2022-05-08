@@ -76,6 +76,7 @@ function gS() {
       var spotifyData = `${data.spotify.song}` + " - " + `${data.spotify.artist}`
       if(spotifyData.length > 40) spotifyData = spotifyData.substring(0, 40) + '...';
       document.getElementById('spotify').innerHTML = spotifyData
+      document.getElementById('spotify-track').href = "spotify:track:" + `${data.spotify.track_id}`;
     }
 	});
 }

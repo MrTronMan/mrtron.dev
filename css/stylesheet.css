@@ -27,6 +27,36 @@ html {
      overflow-x:hidden;
      scroll-behavior: smooth;
 }
+/*Background Animations*/
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #131416 50%, #33353a 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:absolute;
+  right:-50%;
+  top:0;
+  z-index:-1;
+  height: 80em
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
 .container {
   display: block;
   text-align: -webkit-center;
@@ -176,6 +206,145 @@ footer {
   color: white;
   padding: 23px 20px;
   position:relative;bottom:0;left:0;right:0;height:10px;
+}
+#spotify {
+  opacity: 50%;
+  padding: 0 0 0 5;
+  text-transform: lowercase;
+}
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+  transition: color 1s ease-out 100ms
+}
+a:hover {
+  color: #e475f1;
+}
+
+.spotify-container {
+  display: flex;
+  text-align: -webkit-center;
+  justify-content: center;
+  align-items: center;
+}
+/*Ping Stuffs*/
+.ping.online {
+  background: rgba(51, 217, 178, 1);
+  box-shadow: 0 0 0 0 rgba(51, 217, 178, 1);
+  animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(51, 217, 178, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(51, 217, 178, 0);
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+  }
+}
+.ping {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  transform: scale(1);
+  animation: pulse-black 2s infinite;
+}
+.ping-mobile {
+  background-image: url("../img/discord-mobile.svg"); 
+  box-shadow: 0 0 0 10px rgba(51, 217, 178, 0.7);
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  transform: scale(1);
+  border-top-right-radius: 58px 80px;
+  border-top-left-radius: 58px 80px;
+  border-bottom-right-radius: 58px 80px;
+  border-bottom-left-radius: 58px 80px;
+  animation: pulse-green 2s infinite;
+}
+.ping-container {
+  display: flex;
+  text-align: -webkit-center;
+  justify-content: center;
+  align-items: flex-end;
+}
+.ping.dnd {
+  background: rgba(255, 82, 82, 1);
+  box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
+  animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+  }
+}
+
+.ping.idle {
+  background: rgba(255, 121, 63, 1);
+  box-shadow: 0 0 0 0 rgba(255, 121, 63, 1);
+  animation: pulse-orange 2s infinite;
+}
+
+@keyframes pulse-orange {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 121, 63, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 121, 63, 0);
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
+  }
+}
+.ping.offline {
+  background: rgb(126, 126, 126);
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+  animation: pulse-white 2s infinite;
+}
+
+@keyframes pulse-white {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
 }
 /*iPhone Sizes*/
 @media screen and (max-width: 600px) {
@@ -443,164 +612,4 @@ footer {
 }
 .about-header span:nth-of-type(12) {
 	animation-delay: .55s;
-}
-/*Background Animations*/
-.bg {
-  animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #131416 50%, #33353a 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:absolute;
-  right:-50%;
-  top:0;
-  z-index:-1;
-  height: 80em
-}
-
-.bg2 {
-  animation-direction:alternate-reverse;
-  animation-duration:4s;
-}
-
-.bg3 {
-  animation-duration:5s;
-}
-@keyframes slide {
-  0% {
-    transform:translateX(-25%);
-  }
-  100% {
-    transform:translateX(25%);
-  }
-}
-/*Ping Stuffs*/
-.ping.online {
-  background: rgba(51, 217, 178, 1);
-  box-shadow: 0 0 0 0 rgba(51, 217, 178, 1);
-  animation: pulse-green 2s infinite;
-}
-
-@keyframes pulse-green {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(51, 217, 178, 0.7);
-  }
-  
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(51, 217, 178, 0);
-  }
-  
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
-  }
-}
-.ping {
-  background: rgba(0, 0, 0, 0);
-  border-radius: 50%;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-  margin: 10px;
-  height: 50px;
-  width: 50px;
-  transform: scale(1);
-  animation: pulse-black 2s infinite;
-}
-.ping-mobile {
-  background-image: url("../img/discord-mobile.svg"); 
-  box-shadow: 0 0 0 10px rgba(51, 217, 178, 0.7);
-  margin: 10px;
-  height: 50px;
-  width: 50px;
-  transform: scale(1);
-  border-top-right-radius: 58px 80px;
-  border-top-left-radius: 58px 80px;
-  border-bottom-right-radius: 58px 80px;
-  border-bottom-left-radius: 58px 80px;
-  animation: pulse-green 2s infinite;
-}
-.ping-container {
-  display: flex;
-  text-align: -webkit-center;
-  justify-content: center;
-  align-items: flex-end;
-}
-.spotify-container {
-  display: flex;
-  text-align: -webkit-center;
-  justify-content: center;
-  align-items: center;
-}
-#spotify {
-  opacity: 50%;
-  padding: 0 0 0 5;
-  text-transform: lowercase;
-}
-.ping.dnd {
-  background: rgba(255, 82, 82, 1);
-  box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
-  animation: pulse-red 2s infinite;
-}
-
-@keyframes pulse-red {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
-  }
-  
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
-  }
-  
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
-  }
-}
-
-.ping.idle {
-  background: rgba(255, 121, 63, 1);
-  box-shadow: 0 0 0 0 rgba(255, 121, 63, 1);
-  animation: pulse-orange 2s infinite;
-}
-
-@keyframes pulse-orange {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(255, 121, 63, 0.7);
-  }
-  
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(255, 121, 63, 0);
-  }
-  
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
-  }
-}
-.ping.offline {
-  background: rgb(126, 126, 126);
-  box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
-  animation: pulse-white 2s infinite;
-}
-
-@keyframes pulse-white {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-  }
-  
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
-  }
-  
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-  }
 }
