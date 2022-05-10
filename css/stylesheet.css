@@ -208,17 +208,36 @@ footer {
   position:relative;bottom:0;left:0;right:0;height:10px;
 }
 #spotify {
-  opacity: 50%;
   padding: 0 0 0 5;
   text-transform: lowercase;
 }
 a:link, a:visited {
   color: white;
+  opacity: 50%;
   text-decoration: none;
-  transition: color 1s ease-out 100ms
+  transition: opacity 3s ease-out 100ms
 }
 a:hover {
-  color: #e475f1;
+  color: white;
+  opacity: 100%;
+  animation: a-hover 5s infinite;
+}
+@keyframes a-hover {
+  0% {
+    color: white;
+  }
+  25% {
+    color: #1ed760;
+  }
+  50% {
+    color: white;
+  }
+  75% {
+    color: #1ed760;
+  }
+  100% {
+    color: white;
+  }
 }
 
 .spotify-container {
