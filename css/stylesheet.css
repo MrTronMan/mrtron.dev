@@ -192,6 +192,16 @@ html {
   width: 55px;
   padding: 10px;
 }
+.shortcuts a:link, a:visited {
+  color: white;
+  opacity: 50%;
+  text-decoration: none;
+  transition: opacity 1s ease-out 100ms
+}
+.shortcuts a:hover {
+  color: white;
+  opacity: 100%;
+}
 .copyright {
   font-weight: 600;
   color: white;
