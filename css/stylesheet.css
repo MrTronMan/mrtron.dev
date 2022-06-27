@@ -196,7 +196,7 @@ html {
   color: white;
   opacity: 50%;
   text-decoration: none;
-  transition: opacity 1s ease-out 100ms
+  transition: opacity .3s ease-out 100ms
 }
 .shortcuts a:hover {
   color: white;
