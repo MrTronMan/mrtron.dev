@@ -18,6 +18,7 @@ const observer = new IntersectionObserver(entries => {
   });
   
   observer.observe(document.querySelector('.about-header'));
+  observer.observe(document.querySelector('.project-header'));
 
 //Lanyard // Spotify Status & Discord Status
 

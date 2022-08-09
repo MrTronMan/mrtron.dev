@@ -27,6 +27,104 @@ html {
      overflow-x:hidden;
      scroll-behavior: smooth;
 }
+
+/*Project Section*/
+.project-grid {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  justify-content: space-evenly;
+  align-content: center;
+  justify-items: center;
+  grid-gap: 1em;
+  justify-content: center;
+  align-content: center;
+}		
+.project-item {
+  background: #131314;
+  padding-left: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.project-description {
+  font-weight: 400;
+  font-size: 18px;
+}
+.project-language {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.circle {
+  background-color: white;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+.language {
+  font-weight: 400;
+  padding-left: 10px;
+}
+#project-image {
+  border: 3px solid #fff;
+}
+
+.project-name {
+  position: relative;
+  top: 10;
+}
+/*Project Section- COLORS*/
+.java {
+  background-color: #b07219;
+}
+.html {
+  background-color: #e34c26;
+}
+.css {
+  background-color: #563d7c;
+}
+.javascript {
+  background-color: #f1e05a;
+}
+.python {
+  background-color: #3572A5;
+}
+.c {
+  background-color: #555555;
+}
+.csharp {
+  background-color: #178600;
+}
+.php {
+  background-color: #4F5D95;
+}
+.ruby {
+  background-color: #701516;
+}
+.swift {
+  background-color: #ffac45;
+}
+.kotlin {
+  background-color: #dbb400;
+}
+.react {
+  background-color: #61dafb;
+}
+.reactnative {
+  background-color: #61dafb;
+}
+.sql {
+  background-color: #ff6c00;
+}
+.mysql {
+  background-color: #ff6c00;
+}
+.mongodb {
+  background-color: #ff6c00;
+}
+
 /*Background Animations*/
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
@@ -158,6 +256,11 @@ html {
 }
 
 .about-header {
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+.project-header {
   font-size: 100px;
   text-align: center;
   font-weight: bold;
