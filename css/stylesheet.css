@@ -38,6 +38,16 @@ html {
   grid-gap: 1em;
   justify-content: center;
   align-content: center;
+}
+.project-grid a:link, a:visited {
+  color: white;
+  opacity: 100%;
+  text-decoration: none;
+}
+.project-grid a:hover {
+  color: white;
+  opacity: 50%;
+  transition: opacity .3s ease-out 100ms
 }		
 .project-item {
   background: #131314;
@@ -330,7 +340,7 @@ a:link, a:visited {
   text-decoration: none;
   transition: opacity 3s ease-out 100ms
 }
-a:hover {
+.spotify-container a:hover {
   color: white;
   opacity: 100%;
   animation: a-hover 5s infinite;
@@ -480,14 +490,20 @@ a:hover {
 }
 /*iPhone Sizes*/
 @media screen and (max-width: 600px) {
+  .welcome {
+    top: 38%;
+  }
+  .project-grid {
+    grid-template-columns: 380px;
+  }
   .color-change {
     font-size: 44px;
-    margin-top: -835px;
+    margin-top: -985px;
     margin-left: 40px;
   }
   .fadeIn {
     font-size: 44px;
-    margin-top: -835px;
+    margin-top: -985px;
     margin-left: 40px;
   }
   .ping {
