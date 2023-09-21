@@ -170,6 +170,12 @@ html {
   text-align: -webkit-center;
   min-height: 35vh;
 }
+.logo {
+  align-items: center;
+}
+.logo img {
+  width: auto;
+}
 .welcome {
     width:800px;
     height: 200px; line-height: 200px;
